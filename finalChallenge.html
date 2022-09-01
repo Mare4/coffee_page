@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My favorite coffee☕</title>
+    <style>
+
+        body {
+            background: linear-gradient(rgb(112, 82, 85), rgb(112, 85, 85));
+        }
+        div {
+            background-color: #0f0f0f;
+            border-radius: 20px;
+            max-width: 50%;
+            margin: 0 auto;
+            padding: 30px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+        }
+        a {
+            color: orange;
+            text-decoration: none;
+        }
+        a:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        p {
+            color: white;
+            font-size: 18px;
+            line-height: normal;
+        }
+        p:hover {
+            text-decoration: underline;
+        }
+        .orangeText {
+            color: orange;
+        }
+        .aquaText {
+            color: aqua;
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+            color: orange;
+            font-size: 25px;
+            padding: 10px;
+            background-color: gray;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px rgb(59, 58, 58);
+            border: none;
+        }
+        button:hover {
+            color: white;
+            background-color: orange;
+            cursor: pointer;
+            box-shadow: 2px 2px 2px rgb(59, 58, 58);
+            transition: 0.8s;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+        <h1>I like Coffee</h1>
+
+        <h2>Especially <a href="https://en.wikipedia.org/wiki/Latte" target="_blank">latte</a></h2>
+
+        <hr>
+
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/496/original/latte.jpeg?1654531334" alt="picture_of_latte">
+            
+        <hr>
+        
+        <p><span class="orangeText">Caffè latte</span>, often shortened to just latte in English, is a coffee beverage of <strong><span class="aquaText">Italian</span></strong> origin made with espresso and steamed milk. Variants include the chocolate-flavored mocha or replacing the coffee with another beverage base such as masala chai
+             (spiced Indian tea), mate, matcha, turmeric, or rooibos; other types of milk, such as soy milk or almond milk, are also used.
+             <br>
+             The term comes from the <em class="orangeText">Italian caffellatte or caffè latte</em>, from caffè e latte, literally "coffee and milk"; in English orthography either or both words sometimes have an accent on the final e (a hyperforeignism or to indicate it is pronounced, not the more-common silent final e of English). In northern Europe and Scandinavia, the term café au lait has traditionally been used for the combination of espresso and milk. In France, café latte is from the original name of the beverage (caffè latte); a combination of espresso and steamed milk equivalent to a "latte" is in French called grand crème and in German Milchkaffee or (in Austria) Wiener Melange.
+        </p>
+        <button>I NEED COFFEE NOW</button>
+    </div>
+
+        <script>
+            function buySomeCoffee(event) {
+                console.log(event);
+                let name = prompt("What is your name?");
+                let address = prompt("Write your address");
+                if (name === null || address === null) {
+                    alert("Wrong name or address");
+                } else {
+                    alert(`Thank you ${name}! Your coffee is on its way to your address 🌝`);
+                }
+                
+            }
+
+            let clickButton = document.querySelector("button");
+            clickButton.addEventListener("click", buySomeCoffee);
+        </script>
+</body>
+</html>
